@@ -23,7 +23,7 @@ const Genre = () => {
     navigate(`/genre?genre=${genre}&page=${page}`);
   };
 
-  const endpoint = `/anime?genre=${genre}&page=${page}`;
+  const endpoint = `/anime?genres=${genre}&page=${page}`;
 
   const { data, isLoading, isError } = useApi(endpoint);
 
