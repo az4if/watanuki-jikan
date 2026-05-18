@@ -64,7 +64,7 @@ const Root = () => {
                   className="font-bold bg-primary px-4 py-2 rounded-xl w-full md:w-1/2"
                 >
                   <h1 className="flex text-black font-extrabold justify-center items-center gap-2 text-base">
-                    <p> Explore Animes</p>
+                    <p> Explore Anime</p>
                     <FaArrowCircleRight />
                   </h1>
                 </Link>

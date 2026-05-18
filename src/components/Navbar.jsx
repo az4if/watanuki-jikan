@@ -7,10 +7,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", id: "/home" },
-    { name: "Movies", id: "/animes/movie" },
-    { name: "TV Series", id: "/animes/tv" },
-    { name: "Most Popular", id: "/animes/most-popular" },
-    { name: "Top Airing", id: "/animes/top-airing" },
+    { name: "Movies", id: "/movie" },
+    { name: "TV Series", id: "/tv" },
+    { name: "Most Popular", id: "/bypopularity" },
+    { name: "Top Airing", id: "airing" },
   ];
   return (
     <nav>

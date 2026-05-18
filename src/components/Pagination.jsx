@@ -37,11 +37,11 @@ const Pagination = ({ currentPage, totalPages, onChange }) => {
   };
 
   const liClass =
-    "bg-lightbg text-sm sm:text-base hover:text-primary rounded-full size-10 sm:size-11 flex justify-center items-center cursor-pointer";
+    "bg-lightbg text-xs sm:text-base hover:text-primary rounded-full size-9 sm:size-11 flex justify-center items-center cursor-pointer";
 
   return (
     <nav>
-      <ul className="flex justify-center items-center gap-2 my-5">
+      <ul className="flex justify-center items-center gap-0.5 sm:gap-2 my-5">
         {showFirst && (
           <li className={liClass} title="page 1" onClick={() => changePage(1)}>
             <FaAngleDoubleLeft />

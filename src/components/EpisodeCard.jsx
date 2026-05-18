@@ -40,6 +40,7 @@ const EpisodeCard = ({ animeId, episode, currentEp, layout }) => {
 
           <p className="truncate flex-1">{episode.title}</p>
 
+          <p>{episode.score}</p>
           {episode.filler && <span>👻</span>}
         </div>
       ) : (

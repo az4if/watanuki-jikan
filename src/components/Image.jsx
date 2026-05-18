@@ -21,18 +21,12 @@ const Image = ({ data }) => {
       <Link to={`/anime/${data.mal_id}`}>
         <div
           title={data.title_english ?? data.title}
-          className="title line-clamp-1 text-sm md:text-base hover:text-primary"
+          className="title line-clamp-2 text-xs md:text-base hover:text-primary"
         >
           <h1>{data.title_english ?? data.title}</h1>
         </div>
       </Link>
-      {data.type && (
-        <div className="type flex gray gap-1 items-center text-sm">
-          <AudioInfo data={data} />
-          <div className="h-1 w-1 bg-primary rounded-full"></div>
-          <h4>{data.duration}</h4>
-        </div>
-      )}
+      {data.type && <AudioInfo data={data} />}
     </div>
   );
 };

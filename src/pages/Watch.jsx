@@ -16,7 +16,7 @@ const Watch = () => {
 
   const [searchParams, setSearchParams] = useSearchParams();
 
-  const [layout, setLayout] = useState("grid");
+  const [layout, setLayout] = useState("list");
   const [page, setPage] = useState(1);
 
   const ep = Number(searchParams.get("ep"));
@@ -162,6 +162,7 @@ const Watch = () => {
               </span>
             </div>
           ))}
+          <p className="text-primary">Out Of 5</p>
         </div>
         {episodes.length > 1 && (
           <div
