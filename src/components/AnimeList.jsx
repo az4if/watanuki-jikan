@@ -25,8 +25,8 @@ const AnimeList = ({ title, endpoint }) => {
           </div>
           <div className="wrapper flex justify-around flex-wrap h-full w-full">
             {data &&
-              data.data?.map((item) => (
-                <div key={item.mal_id} className="flw-item">
+              data.data?.map((item, index) => (
+                <div key={item.mal_id + index} className="flw-item">
                   <Image data={item} key={item.mal_id} />
                 </div>
               ))}

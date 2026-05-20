@@ -7,7 +7,8 @@ import Heading from "../components/Heading";
 import Image from "../components/Image";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer";
-import { genres } from "../utils/genres";
+import { genres as genreList } from "../utils/genres";
+import Genres from "../components/Genres";
 
 const Genre = () => {
   const [searchParams] = useSearchParams();
@@ -15,7 +16,7 @@ const Genre = () => {
   const genre = searchParams.get("genre");
   const page = searchParams.get("page") || 1;
 
-  const currentGenre = genres.find((g) => g.mal_id === Number(genre));
+  const currentGenre = genreList.find((g) => g.mal_id === Number(genre));
 
   const navigate = useNavigate();
 
@@ -44,6 +45,7 @@ const Genre = () => {
 
       <Heading>Anime By {currentGenre.name}</Heading>
 
+      <Genres className={"px-2 py-1 bg-lightbg m-1 text-sm text-black"} />
       <div className="flex flex-wrap justify-around items-center">
         {data?.data.map((item, index) => (
           <div key={item.mal_id + index} className="flw-item">

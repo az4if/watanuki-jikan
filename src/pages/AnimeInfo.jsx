@@ -37,7 +37,7 @@ const AnimeInfo = () => {
   return (
     <main>
       <Helmet>
-        <title>anime</title>
+        <title>anime {id}</title>
         <meta property="og:title" content="detail - watanuki" />
       </Helmet>
       {data && (
@@ -63,7 +63,8 @@ const AnimeInfo = () => {
 
             {/* Main Info */}
             <div className="col-span-2 space-y-4">
-              <h1 className="text-4xl font-bold">{data.data.title}</h1>
+              <h1 className="text-4xl font-bold">{data.data.title_english}</h1>
+              <p className="text-gray-400">{data.data.title}</p>
 
               <p className="text-gray-400">{data.data.title_japanese}</p>
 

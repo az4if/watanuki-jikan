@@ -23,7 +23,7 @@ const Image = ({ data }) => {
           title={data.title_english ?? data.title}
           className="title line-clamp-2 text-xs md:text-base hover:text-primary"
         >
-          <h1>{data.title_english ?? data.title}</h1>
+          <h1>{data.title_english ? data.title_english : data.title}</h1>
         </div>
       </Link>
       {data.type && <AudioInfo data={data} />}
