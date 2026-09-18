@@ -1,7 +1,9 @@
 import { useQuery, useInfiniteQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-const apiUrl = "https://api.jikan.moe/v4";
+// const apiUrl = "https://api.jikan.moe/v4";
+const apiUrl = "https://jikan.lucashdo.com/v1";
+
 const fetchData = async (url) => {
   try {
     const data = await fetch(apiUrl + url);
